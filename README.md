@@ -58,43 +58,61 @@ M  .  .  .  .
 
 ### Mapa Ejemplo 1
 
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".  .  .  .  .
-.  .  .  .  .
-C  .  .  M  .
-C  .  .  M  .
-M  .  .  .  ."><pre lang="plaintext" class="notranslate"><code>.  .  .  .  .
+```plaintext
 .  .  .  .  .
 C  .  .  M  .
 C  .  .  M  .
 M  .  .  .  .
-</code></pre></div>
+
+Monstruo2 pierde su turno.
+Monstruo2 se movió a 4,2
+Cazador1 ha caído en una trampa y no puede moverse el siguiente turno.
+Cazador1 atrapó a Monstruo1 en 1,2
+Cazador2 falló al intentar atrapar a Monstruo2
+Cazador1 atrapó a Monstruo3 en 2,3
+Cazador2 atrapó a Monstruo1 en 3,1
+Fin del juego.
+Cazador1 atrapó 2 monstruos.
+Cazador2 atrapó 1 monstruos.
+```
 
 
-
-### Mapa Ejemplo 2
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".  .  .  .  .
-.  C  .  M  .
-M  .  .  .  .
-.  .  B  C  .
-.  .  .  .  ."><pre lang="plaintext" class="notranslate"><code>.  .  .  .  .
-.  C  .  M  .
-M  .  .  .  .
-.  .  B  C  .
+```plaintext
+.  .  .  .  M
 .  .  .  .  .
-</code></pre></div>
+.  .  T  C  B
+.  .  M  M  .
+.  .  .  .  C
+
+Cazador2 ha caído en una trampa y no puede moverse el siguiente turno.
+Cazador2 falló al intentar atrapar a Monstruo3
+Cazador1 atrapó a Monstruo1 en 5,1
+Cazador1 falló al intentar atrapar a Monstruo2
+Cazador2 atrapó a Monstruo3 en 4,3
+Fin del juego.
+Cazador1 capturó 1 monstruos.
+Cazador2 capturó 1 monstruos.
+```
 
 
 ### Mapa Ejemplo 3
 
 
 
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".  T  .  C  .
-M  .  M  .  .
-.  .  M  .  .
-.  .  .  .  .
-.  .  .  .  C"><pre lang="plaintext" class="notranslate"><code>.  T  .  C  .
+```plaintext
+.  T  .  C  .
 M  .  M  .  .
 .  .  M  .  .
 .  .  .  .  .
 .  .  .  .  C
-</code></pre></div>
+
+Monstruo1 se movió a 2,0
+Monstruo3 ha caído en una trampa y no puede moverse el siguiente turno.
+Monstruo3 se movió a 0,1
+Cazador2 atrapó a Monstruo1 en 4,1
+Cazador2 falló al intentar atrapar a Monstruo1
+Cazador2 atrapó a Monstruo3 en 1,2
+Fin del juego.
+Cazador1 capturó 0 monstruos.
+Cazador2 capturó 2 monstruos.
+```
