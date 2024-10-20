@@ -50,11 +50,7 @@ A continuación se muestra un ejemplo de cómo podría verse el mapa durante una
 - **T**: Trampa
 - **B**: Bonificacion
 - **.**: Espacio vacío
-.  .  .  .  .
-.  .  .  .  .
-C  .  .  M  .
-C  .  .  M  .
-M  .  .  .  .
+
 
 ### Mapa Ejemplo 1
 
