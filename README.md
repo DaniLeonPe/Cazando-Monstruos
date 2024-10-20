@@ -1,40 +1,38 @@
 # README.md
 
-## Descripción del Juego
+## Descripción General
 
-Este proyecto implementa un juego simple donde cazadores intentan atrapar monstruos en un mapa de tamaño definido. El juego se desarrolla en un entorno multihilo, permitiendo que múltiples cazadores interactúen simultáneamente con los monstruos. Cada cazador se mueve a ubicaciones aleatorias en el mapa, intentando atrapar monstruos que se encuentran en la misma ubicación.
+Este proyecto simula un juego en el que cazadores intentan capturar monstruos en un mapa. El juego se desarrolla durante un tiempo determinado, y finalmente se muestran los resultados de las capturas.
 
-### Estructura del Código
 
-El código está organizado en varias clases:
+## Estructura del Proyecto
 
-1. **Cazador**: Representa a un cazador que se mueve por el mapa y trata de atrapar monstruos. Utiliza un hilo para su ejecución.
-   - **Métodos Principales**:
-     - `run()`: Método que se ejecuta en el hilo, donde el cazador se mueve y trata de atrapar monstruos.
-     - `getCapturas()`: Devuelve la cantidad de monstruos atrapados por el cazador.
+El proyecto se organiza en varios archivos Java, cada uno de los cuales cumple una función :
 
-2. **Monstruo**: Representa a un monstruo en el juego.
-   - **Métodos Principales**:
-     - `atrapar()`: Marca al monstruo como atrapado.
-     - `estaAtrapado()`: Verifica si el monstruo ha sido atrapado.
+1. **Cazador.java**: Representa a los cazadores que intentan capturar a los monstruos.
+2. **Monstruo.java**: Representa a los monstruos que intentan escapar de los cazadores.
+3. **Mapa.java**: Maneja la creación y el estado del mapa, así como las interacciones entre cazadores, monstruos, trampas y bonificaciones.
+5. **Juego.java**: Clase principal que inicia el juego, crea los cazadores y monstruos, y controla el flujo del juego.
 
-3. **Mapa**: Maneja la ubicación de cazadores y monstruos en el juego.
-   - **Métodos Principales**:
-     - `generarUbicacion()`: Genera ubicaciones aleatorias en el mapa.
-     - `moverCazador()`: Mueve a un cazador a una nueva ubicación.
-     - `agregarMonstruo()`: Añade un monstruo a una ubicación específica.
-     - `getMonstruoEnUbicacion()`: Devuelve el monstruo en una ubicación determinada.
-     - `mostrarMapa()`: Imprime el estado actual del mapa en la consola.
+## Funcionalidad
 
-4. **Juego**: Clase principal que inicia el juego.
-   - **Métodos Principales**:
-     - `main()`: Configura el juego, crea cazadores y monstruos, y controla el flujo del juego.
+- **Cazadores**:
+  - Se mueven aleatoriamente en el mapa.
+  - Pueden perder turnos si caen en trampas.
+  - Pueden capturar monstruos si están en la misma ubicación y tienen éxito en un intento de captura.
 
-### Ejecución del Juego
+- **Monstruos**:
+  - Se mueven aleatoriamente, pero intentan alejarse de los cazadores.
+  - Pueden caer en trampas o recibir bonificaciones que afectan su comportamiento.
 
-Se inicia la clase `Juego`. La duración del juego está establecida en 30 segundos, y puedes ajustar el número de cazadores y monstruos en el código.
+## Ejecución del Programa
 
-### Salida de Ejemplo
+Para ejecutar el programa, sigue estos pasos:
+
+1. Compila todas las clases en el mismo paquete.
+2. Ejecuta la clase `Juego`.
+
+### Salida Esperada
 
 Durante la ejecución, la salida del juego se verá algo así:
 
